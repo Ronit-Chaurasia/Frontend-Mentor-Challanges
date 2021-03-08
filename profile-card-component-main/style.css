@@ -53,7 +53,6 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
@@ -63,17 +62,23 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  color: var(--Very-dark-desaturated);
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  color: var(--Dark-grayish);
+  font-weight: var(--weight-light);
 }
 h4 {
   font-size: 0.875rem;
 }
-p {
-  margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+span {
+  font-weight: var(--weight-light);
+  margin-left: 0.2em;
+  color: var(--Dark-grayish);
+  font-size: 1.8rem;
 }
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -107,7 +112,6 @@ p {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,4 +135,54 @@ p {
   background-color: #fff;
   border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.226) 0 1rem 3rem;
+  overflow: hidden;
+}
+/*
+===========================
+      card top
+===========================
+*/
+.top {
+  background: url(./images/bg-pattern-card.svg);
+  height: 30%;
+  width: 100%;
+  background-size: cover;
+}
+img {
+  display: inline-block;
+  border-radius: 50%;
+  z-index: 1;
+  border: solid #fff 0.6rem;
+}
+.image {
+  text-align: center;
+  margin-top: -5rem;
+  margin-bottom: 0.7em;
+}
+/*
+===========================
+      card mid
+===========================
+*/
+.mid {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+hr {
+  color: var(--Dark-gray);
+  opacity: 0.2;
+}
+/*
+===========================
+      card bottom
+===========================
+*/
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 30px;
+}
+.social span {
+  font-size: 1.5rem;
 }
