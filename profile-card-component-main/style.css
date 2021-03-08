@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* 
+=====================
+    Variables
+=====================
+*/
+:root {
+  --Darkcyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated: hsl(229, 23%, 23%);
+  --Dark-grayish: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --Family: "Kumbh Sans", sans-serif;
+  --spacing: 0.1rem;
+  --max-width: 1170px;
+  --weight-light: 400;
+  --weight-bold: 700;
+}
+/*
+==========================
+    Global Styles
+==========================
+*/
+
+*,
+::after,
+::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  font-family: var(--Family);
+  font-size: 1.8rem;
+  background-color: var(--Darkcyan);
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-position: right 50vw top -75vh, left 50vw top 40vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/*
+===========================
+    Global Classes
+===========================
+*/
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 95vw;
+  }
+}
+
+/*
+========================
+    card styling
+========================
+*/
+
+.card {
+  height: 42rem;
+  width: 37rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.226) 0 1rem 3rem;
+}
